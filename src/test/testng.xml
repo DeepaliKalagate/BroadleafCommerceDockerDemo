@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite" parallel="tests" thread-count="2">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.thoughtworks.script.LoginTest"/>
+            <class name="com.thoughtworks.script.RegisterTest"/>
+            <class name="com.thoughtworks.script.MerchandisePageTest"/>
+            <class name="com.thoughtworks.script.HomePageTest"/>
+            <class name="com.thoughtworks.script.HotSauceTest"/>
+            <class name="com.thoughtworks.script.HotSaucePageTest"/>
+            <class name="com.thoughtworks.script.ProductRemoveFromCartTest"/>
+            <class name="com.thoughtworks.script.ClearancePageTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.thoughtworks.script.LoginTest"/>
+            <class name="com.thoughtworks.script.RegisterTest"/>
+            <class name="com.thoughtworks.script.HomePageTest"/>
+            <class name="com.thoughtworks.script.GiftCardPageTest"/>
+            <class name="com.thoughtworks.script.ShippingPageTest"/>
+        </classes>
+    </test>
+</suite>
